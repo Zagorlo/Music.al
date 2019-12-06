@@ -1,7 +1,7 @@
 body
 {
-	margin: 0px;
-	min-width: 320px;
+	max-width: 1280px;
+	margin: 0 auto;
 }
 
 html
@@ -16,6 +16,7 @@ html
 
 .all_content_layout
 {
+	text-align: center;
 	height: auto;
 	width: 100%;
 	background-attachment: fixed;
@@ -367,6 +368,7 @@ html
 	        box-sizing: border-box;
 	padding: 5px;
 	width: 100%;
+	box-sizing: border-box;
 }
 
 .song_image_cover
@@ -495,6 +497,14 @@ html
 	.header_content span
 	{
 		font-size: 5vw;
+	}
+	
+	.footer_layout
+	{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 	
 }
