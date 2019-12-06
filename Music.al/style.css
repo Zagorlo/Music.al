@@ -1,6 +1,7 @@
 body
 {
 	margin: 0px;
+	min-width: 320px;
 }
 
 html
@@ -9,6 +10,7 @@ html
 	   -moz-user-select: none;
 	    -ms-user-select: none;
 	        user-select: none;
+	min-width: 320px;
 	font-family: 'Segoe UI Regular', Arial, Helvetica, Verdana, Roboto, Calibri, sans-serif;
 }
 
@@ -30,21 +32,11 @@ html
 	        align-items: center;
 }
 
-.left_vertical_layout
+.vertical_layout
 {
-	width: 745px;
+	width: 100%;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-}
-
-.right_vertical_layout
-{
-	position: fixed;
-	right: 0px;
-	background-color: red;
-	width: 200px;
-	height: 300px;
-	display: none;
 }
 
 .content_element
@@ -52,9 +44,12 @@ html
 	border: 1px #72727d solid;
 	border-radius: 3px;
 	width: 100%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	background-color: rgba(255, 255, 255, .9);
 	color: #72727d;
 	font: 12px/15px Century Gothic;
+	min-width: 320px;
 }
 
 .header_content
@@ -79,6 +74,8 @@ html
 .header_content span
 {
 	font: 25px/30px Mistral;
+	min-width: 320px;
+	text-align: center;
 }
 
 .main_content
@@ -93,6 +90,8 @@ html
 .music_layout
 {
 	width: 100%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .main_audio_player
@@ -465,4 +464,46 @@ html
 .footer_layout img
 {
 	height: 120px;
+}
+
+@media screen and (max-width: 500px)
+{
+	.song
+	{
+		width: 200px;
+	}
+	
+	.main_player_tools
+	{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding-left: 50px;
+	}
+	.main_tools
+	{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px)
+{
+	.header_content span
+	{
+		font-size: 5vw;
+	}
+	
+}
+
+@media screen and (max-width: 450px)
+{
+	.main_player_pic
+	{
+		width: 66vw;
+		height: 66vw;
+	}
 }
