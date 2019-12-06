@@ -13,9 +13,9 @@
 	</script>
 </head>
 
-<body>
-	<div class="all_content_layout" style="background-image: url({all_content_layout_font})">
-		<div class="left_vertical_layout">
+<body style="background-image: url({all_content_layout_font})">
+	<div class="all_content_layout">
+		<div class="vertical_layout">
 			<header class="header_content content_element">
 				<span>
 					{header_content}
@@ -95,8 +95,6 @@
 				</div>
 				<img src="{footer_image}">
 			</footer>
-		</div>
-		<div class="right_vertical_layout">
 		</div>
 	</div>
 </body>
